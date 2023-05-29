@@ -1,0 +1,16 @@
+
+.input_movie {
+    /* margin: auto; */
+    width: 50%;
+  }
+  
+  .movie-search-form {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .form-error{
+    color: red;
+    font-size: 0.8em;
+    text-align: center;
+  }
