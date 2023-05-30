@@ -1,7 +1,7 @@
 # 🎥 Movie Finder App
 
 This React application allows users to search for movies through an external API and display a list of results.
-<p><img src="https://github.com/JOSEW383/movie-finder/blob/master/public/MovieFinderDemo.gif" alt="Demo" width="400" height="400" /></p>
+<p><img src="https://github.com/JOSEW383/movie-finder/blob/master/public/MovieFinderDemo.gif" alt="Demo" width="50%" height="50%" /></p>
 
 ## 🎯 Features
 
