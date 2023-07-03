@@ -1,12 +1,14 @@
 {
-  "name": "my-vue-app",
+  "name": "movie-finder",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "npm install && vite build",
+    "preview": "vite preview",
+    "start": "vite",
+    "test": "vite build && playwright test"
   },
   "dependencies": {
     "lodash": "^4.17.21",
