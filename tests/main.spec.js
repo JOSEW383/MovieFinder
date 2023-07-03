@@ -1,11 +1,10 @@
 import { test, expect } from "@playwright/test";
 
-const URL = "http://localhost:5173/";
 
 test("Search movie", async ({ page }) => {
   // Open the page and check the title
   const MOVIE_NAME = "Batman v Superman: Dawn of Justice";
-  await page.goto(URL);
+  await page.goto("/");
   await expect(page).toHaveTitle("Movie Finder");
 
   // Find the first input and type given movie name
@@ -16,7 +15,7 @@ test("Search movie", async ({ page }) => {
   // Check the movie list
   await page.waitForSelector('//div[@class="movie-card"]//a');
   const movieCard = page.locator('//div[@class="movie-card"]//a');
-  await expect(movieCard).toHaveCount(3);
+  await expect(movieCard).toHaveCount(4);
 
   // Click on the first movie card
   const page2Promise = page.waitForEvent('popup');

@@ -1,3 +1,4 @@
+[![Playwright Tests](https://github.com/JOSEW383/movie-finder/actions/workflows/playwright.yml/badge.svg)](https://github.com/JOSEW383/movie-finder/actions/workflows/playwright.yml)
 # 🎥 Movie Finder App
 
 This React application allows users to search for movies through an external API and display a list of results.
@@ -19,7 +20,7 @@ To run this project, you need to have Node.js and npm installed on your computer
 
 1. Clone the repository into your local machine.
 2. Create .env file with ENV variables (see .env.example).
-2. Install dependencies: `npm install`
+2. Install dependencies: `npm run build`
 3. Run the application: `npm run dev`
 
 ## 🧪 Testing
@@ -41,4 +42,5 @@ This app was tested using [playwright](https://playwright.dev/), to run the test
 - [Water.css](https://watercss.kognise.dev/)
 - [Vite](https://vitejs.dev/)
 - [Playwright](https://playwright.dev/)
+- [Github Actions](https://docs.github.com/en/actions)
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)

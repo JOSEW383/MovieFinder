@@ -9,6 +9,10 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
+    - name: 'Create env file'
+      run: |
+        echo "${{ secrets.VITE_API_ID }}" > .env
+        echo "${{ secrets.VITE_API_KEY }}" > .env
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
       with:
