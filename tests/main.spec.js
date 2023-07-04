@@ -23,9 +23,9 @@ test("Search movie", async ({ page }) => {
   const page2 = await page2Promise;
 
   // Check the movie details on the new page
-  try {
-    await page2.click(locator('//button[@id="L2AGLb"]'));
-} catch (e) {}
+//   try {
+//     await page2.locator('//button[@id="L2AGLb"]').click();
+// } catch (e) {}
   const movieDetails = page2.locator('//*[@role="combobox"]');
   let  movieDetailsText = await movieDetails.inputValue();
   movieDetailsText = movieDetailsText.slice(0, -5);
