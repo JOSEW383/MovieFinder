@@ -23,7 +23,7 @@ test("Search movie", async ({ page }) => {
   const page2 = await page2Promise;
 
   // Check the movie details on the new page
-  await page2.locator('//div[@role="dialog"]//button[./div[contains(text(),"Accept") or contains(text(),"Aceptar")]]').click();
+  await page2.locator('//button[@id="L2AGLb"]').click();
   const movieDetails = page2.locator('//*[@role="combobox"]');
   let  movieDetailsText = await movieDetails.inputValue();
   movieDetailsText = movieDetailsText.slice(0, -5);
